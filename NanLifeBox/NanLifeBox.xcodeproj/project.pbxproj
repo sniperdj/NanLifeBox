@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		204F04192C8437E3AC509062 /* Pods_NanLifeBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F303D9D24805F84A9B6F4CC /* Pods_NanLifeBox.framework */; };
+		7D2860B51FE55A8D000DA672 /* ZNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2860B41FE55A8D000DA672 /* ZNTabBarController.swift */; };
+		7D2860B71FE55B40000DA672 /* ZNTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2860B61FE55B40000DA672 /* ZNTabBarItem.swift */; };
+		7D2860CD1FE600C6000DA672 /* NLBEnjoyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2860CB1FE600C6000DA672 /* NLBEnjoyController.swift */; };
+		7D2860CE1FE600C6000DA672 /* NLBEnjoyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D2860CC1FE600C6000DA672 /* NLBEnjoyController.xib */; };
+		7D2860D11FE600DB000DA672 /* NLBMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2860CF1FE600DB000DA672 /* NLBMyController.swift */; };
+		7D2860D21FE600DB000DA672 /* NLBMyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D2860D01FE600DB000DA672 /* NLBMyController.xib */; };
+		7D2860D41FE61056000DA672 /* NLBJokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2860D31FE61056000DA672 /* NLBJokeData.swift */; };
+		7D2860DB1FE66727000DA672 /* NLBImageJokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2860D91FE66727000DA672 /* NLBImageJokeCell.swift */; };
+		7D2860DC1FE66727000DA672 /* NLBImageJokeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D2860DA1FE66727000DA672 /* NLBImageJokeCell.xib */; };
+		7D2C13CC1F34176D00358927 /* NLBMainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2C13CB1F34176D00358927 /* NLBMainData.swift */; };
+		7D37742E2064AE78005DE77E /* NanLifeBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D37742D2064AE78005DE77E /* NanLifeBoxTests.swift */; };
+		7D37743C2064AE88005DE77E /* NanLifeBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D37743B2064AE88005DE77E /* NanLifeBoxUITests.swift */; };
+		7D3774452064E4A4005DE77E /* NLBMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3774432064E4A4005DE77E /* NLBMenuCell.swift */; };
+		7D3774462064E4A4005DE77E /* NLBMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D3774442064E4A4005DE77E /* NLBMenuCell.xib */; };
+		7D37744B2068CADE005DE77E /* MenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D37744A2068CADE005DE77E /* MenuList.plist */; };
+		7D37744D2068CE0E005DE77E /* NLBMenuInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D37744C2068CE0E005DE77E /* NLBMenuInfo.swift */; };
+		7D3774512068EF14005DE77E /* MyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D3774502068EF14005DE77E /* MyList.plist */; };
+		7D49B8BA2074B45E000E6666 /* NLBDaysWeatherCellConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49B8B92074B45E000E6666 /* NLBDaysWeatherCellConf.swift */; };
+		7D49B8BC2074B4AD000E6666 /* NLBCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49B8BB2074B4AD000E6666 /* NLBCellConfigurator.swift */; };
+		7D49B8BE2074B9B5000E6666 /* NLBMenuCellConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49B8BD2074B9B5000E6666 /* NLBMenuCellConf.swift */; };
+		7D49B8C12074BBB0000E6666 /* NLBDaysWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49B8BF2074BBB0000E6666 /* NLBDaysWeatherCell.swift */; };
+		7D49B8C22074BBB0000E6666 /* NLBDaysWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D49B8C02074BBB0000E6666 /* NLBDaysWeatherCell.xib */; };
+		7D6036482081A9B900873994 /* NLBHealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6036462081A9B900873994 /* NLBHealthController.swift */; };
+		7D6036492081A9B900873994 /* NLBHealthController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6036472081A9B900873994 /* NLBHealthController.xib */; };
+		7D60364B2081AD5900873994 /* HealthList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D60364A2081AD5900873994 /* HealthList.plist */; };
+		7D60364F2081EEE400873994 /* NLBMyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60364E2081EEE400873994 /* NLBMyNavigator.swift */; };
+		7D6036512081F71C00873994 /* NLBHealthCellConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6036502081F71C00873994 /* NLBHealthCellConf.swift */; };
+		7D6036532081F97800873994 /* NLBHealthLevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6036522081F97800873994 /* NLBHealthLevelController.swift */; };
+		7D67CDD51F302DAA00FC79CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67CDD41F302DAA00FC79CE /* AppDelegate.swift */; };
+		7D67CDD71F302DAA00FC79CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D67CDD61F302DAA00FC79CE /* Assets.xcassets */; };
+		7D67CDDA1F302DAA00FC79CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D67CDD81F302DAA00FC79CE /* LaunchScreen.storyboard */; };
+		7D67CDE51F302E0F00FC79CE /* NLBRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67CDE41F302E0F00FC79CE /* NLBRootViewController.swift */; };
+		7D67CE171F31B74A00FC79CE /* NLBConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67CE161F31B74A00FC79CE /* NLBConst.swift */; };
+		7D90EAFF2064A7DE0083E9AB /* NLBHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D90EAFD2064A7DE0083E9AB /* NLBHomeController.swift */; };
+		7D90EB002064A7DE0083E9AB /* NLBHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D90EAFE2064A7DE0083E9AB /* NLBHomeController.xib */; };
+		7DBD3F6620649C9B0031591D /* NLBNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD3F6520649C9B0031591D /* NLBNavigator.swift */; };
+		7DBD3F6820649D3E0031591D /* NLBHomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD3F6720649D3E0031591D /* NLBHomeNavigator.swift */; };
+		7DBD3F6B20649F100031591D /* NLBWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD3F6920649F100031591D /* NLBWeatherController.swift */; };
+		7DBD3F6C20649F100031591D /* NLBWeatherController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD3F6A20649F100031591D /* NLBWeatherController.xib */; };
+		7DDBD90B2074BCB70067824D /* NLBWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDBD90A2074BCB70067824D /* NLBWeatherViewModel.swift */; };
+		7DDBD90D2074C7E30067824D /* NLBWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDBD90C2074C7E30067824D /* NLBWeatherData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D3774302064AE78005DE77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D67CDC91F302DAA00FC79CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D67CDD01F302DAA00FC79CE;
+			remoteInfo = NanLifeBox;
+		};
+		7D37743E2064AE88005DE77E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D67CDC91F302DAA00FC79CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D67CDD01F302DAA00FC79CE;
+			remoteInfo = NanLifeBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14EF034C0635C8D5724DBC25 /* Pods-NanLifeBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanLifeBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox.release.xcconfig"; sourceTree = "<group>"; };
+		19C4B910124ED8B30C81EDB2 /* Pods-NanLifeBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanLifeBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox.debug.xcconfig"; sourceTree = "<group>"; };
+		3F303D9D24805F84A9B6F4CC /* Pods_NanLifeBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanLifeBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2860B41FE55A8D000DA672 /* ZNTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNTabBarController.swift; sourceTree = "<group>"; };
+		7D2860B61FE55B40000DA672 /* ZNTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNTabBarItem.swift; sourceTree = "<group>"; };
+		7D2860CB1FE600C6000DA672 /* NLBEnjoyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBEnjoyController.swift; sourceTree = "<group>"; };
+		7D2860CC1FE600C6000DA672 /* NLBEnjoyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBEnjoyController.xib; sourceTree = "<group>"; };
+		7D2860CF1FE600DB000DA672 /* NLBMyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBMyController.swift; sourceTree = "<group>"; };
+		7D2860D01FE600DB000DA672 /* NLBMyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBMyController.xib; sourceTree = "<group>"; };
+		7D2860D31FE61056000DA672 /* NLBJokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBJokeData.swift; sourceTree = "<group>"; };
+		7D2860D91FE66727000DA672 /* NLBImageJokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBImageJokeCell.swift; sourceTree = "<group>"; };
+		7D2860DA1FE66727000DA672 /* NLBImageJokeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBImageJokeCell.xib; sourceTree = "<group>"; };
+		7D2C13CB1F34176D00358927 /* NLBMainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLBMainData.swift; sourceTree = "<group>"; };
+		7D37742B2064AE78005DE77E /* NanLifeBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanLifeBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D37742D2064AE78005DE77E /* NanLifeBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanLifeBoxTests.swift; sourceTree = "<group>"; };
+		7D37742F2064AE78005DE77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3774392064AE88005DE77E /* NanLifeBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanLifeBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D37743B2064AE88005DE77E /* NanLifeBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanLifeBoxUITests.swift; sourceTree = "<group>"; };
+		7D37743D2064AE88005DE77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3774432064E4A4005DE77E /* NLBMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBMenuCell.swift; sourceTree = "<group>"; };
+		7D3774442064E4A4005DE77E /* NLBMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBMenuCell.xib; sourceTree = "<group>"; };
+		7D37744A2068CADE005DE77E /* MenuList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MenuList.plist; sourceTree = "<group>"; };
+		7D37744C2068CE0E005DE77E /* NLBMenuInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBMenuInfo.swift; sourceTree = "<group>"; };
+		7D3774502068EF14005DE77E /* MyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyList.plist; sourceTree = "<group>"; };
+		7D49B8B92074B45E000E6666 /* NLBDaysWeatherCellConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBDaysWeatherCellConf.swift; sourceTree = "<group>"; };
+		7D49B8BB2074B4AD000E6666 /* NLBCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBCellConfigurator.swift; sourceTree = "<group>"; };
+		7D49B8BD2074B9B5000E6666 /* NLBMenuCellConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBMenuCellConf.swift; sourceTree = "<group>"; };
+		7D49B8BF2074BBB0000E6666 /* NLBDaysWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBDaysWeatherCell.swift; sourceTree = "<group>"; };
+		7D49B8C02074BBB0000E6666 /* NLBDaysWeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBDaysWeatherCell.xib; sourceTree = "<group>"; };
+		7D6036462081A9B900873994 /* NLBHealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBHealthController.swift; sourceTree = "<group>"; };
+		7D6036472081A9B900873994 /* NLBHealthController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBHealthController.xib; sourceTree = "<group>"; };
+		7D60364A2081AD5900873994 /* HealthList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HealthList.plist; sourceTree = "<group>"; };
+		7D60364E2081EEE400873994 /* NLBMyNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBMyNavigator.swift; sourceTree = "<group>"; };
+		7D6036502081F71C00873994 /* NLBHealthCellConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBHealthCellConf.swift; sourceTree = "<group>"; };
+		7D6036522081F97800873994 /* NLBHealthLevelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBHealthLevelController.swift; sourceTree = "<group>"; };
+		7D67CDD11F302DAA00FC79CE /* NanLifeBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanLifeBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D67CDD41F302DAA00FC79CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D67CDD61F302DAA00FC79CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D67CDD91F302DAA00FC79CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D67CDDB1F302DAA00FC79CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D67CDE41F302E0F00FC79CE /* NLBRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLBRootViewController.swift; sourceTree = "<group>"; };
+		7D67CE161F31B74A00FC79CE /* NLBConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLBConst.swift; sourceTree = "<group>"; };
+		7D90EAFD2064A7DE0083E9AB /* NLBHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBHomeController.swift; sourceTree = "<group>"; };
+		7D90EAFE2064A7DE0083E9AB /* NLBHomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBHomeController.xib; sourceTree = "<group>"; };
+		7DBD3F6520649C9B0031591D /* NLBNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBNavigator.swift; sourceTree = "<group>"; };
+		7DBD3F6720649D3E0031591D /* NLBHomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBHomeNavigator.swift; sourceTree = "<group>"; };
+		7DBD3F6920649F100031591D /* NLBWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBWeatherController.swift; sourceTree = "<group>"; };
+		7DBD3F6A20649F100031591D /* NLBWeatherController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NLBWeatherController.xib; sourceTree = "<group>"; };
+		7DDBD90A2074BCB70067824D /* NLBWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBWeatherViewModel.swift; sourceTree = "<group>"; };
+		7DDBD90C2074C7E30067824D /* NLBWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBWeatherData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3774282064AE78005DE77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3774362064AE88005DE77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D67CDCE1F302DAA00FC79CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204F04192C8437E3AC509062 /* Pods_NanLifeBox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C6E36270ADB4406DC96036 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19C4B910124ED8B30C81EDB2 /* Pods-NanLifeBox.debug.xcconfig */,
+				14EF034C0635C8D5724DBC25 /* Pods-NanLifeBox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D2860B31FE55A7C000DA672 /* ZNTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860B41FE55A8D000DA672 /* ZNTabBarController.swift */,
+				7D2860B61FE55B40000DA672 /* ZNTabBarItem.swift */,
+			);
+			path = ZNTabBarController;
+			sourceTree = "<group>";
+		};
+		7D2860B81FE60025000DA672 /* Enjoy */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860B91FE60025000DA672 /* ViewModel */,
+				7D2860BA1FE60025000DA672 /* Controller */,
+				7D2860BB1FE60025000DA672 /* Model */,
+				7D2860BC1FE60025000DA672 /* View */,
+			);
+			path = Enjoy;
+			sourceTree = "<group>";
+		};
+		7D2860B91FE60025000DA672 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D2860BA1FE60025000DA672 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860CB1FE600C6000DA672 /* NLBEnjoyController.swift */,
+				7D2860CC1FE600C6000DA672 /* NLBEnjoyController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D2860BB1FE60025000DA672 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860D31FE61056000DA672 /* NLBJokeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D2860BC1FE60025000DA672 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860D91FE66727000DA672 /* NLBImageJokeCell.swift */,
+				7D2860DA1FE66727000DA672 /* NLBImageJokeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D2860BD1FE60031000DA672 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860BE1FE60031000DA672 /* ViewModel */,
+				7D2860BF1FE60031000DA672 /* Controller */,
+				7D2860C01FE60031000DA672 /* Model */,
+				7D2860C11FE60031000DA672 /* View */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		7D2860BE1FE60031000DA672 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D2860BF1FE60031000DA672 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860CF1FE600DB000DA672 /* NLBMyController.swift */,
+				7D2860D01FE600DB000DA672 /* NLBMyController.xib */,
+				7D6036462081A9B900873994 /* NLBHealthController.swift */,
+				7D6036472081A9B900873994 /* NLBHealthController.xib */,
+				7D6036522081F97800873994 /* NLBHealthLevelController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D2860C01FE60031000DA672 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D60364E2081EEE400873994 /* NLBMyNavigator.swift */,
+				7D6036502081F71C00873994 /* NLBHealthCellConf.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D2860C11FE60031000DA672 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D2860C21FE6003E000DA672 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DDBD90A2074BCB70067824D /* NLBWeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D37742C2064AE78005DE77E /* NanLifeBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D37742D2064AE78005DE77E /* NanLifeBoxTests.swift */,
+				7D37742F2064AE78005DE77E /* Info.plist */,
+			);
+			path = NanLifeBoxTests;
+			sourceTree = "<group>";
+		};
+		7D37743A2064AE88005DE77E /* NanLifeBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D37743B2064AE88005DE77E /* NanLifeBoxUITests.swift */,
+				7D37743D2064AE88005DE77E /* Info.plist */,
+			);
+			path = NanLifeBoxUITests;
+			sourceTree = "<group>";
+		};
+		7D3774492064F583005DE77E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7D37744A2068CADE005DE77E /* MenuList.plist */,
+				7D3774502068EF14005DE77E /* MyList.plist */,
+				7D60364A2081AD5900873994 /* HealthList.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7D67CDC81F302DAA00FC79CE = {
+			isa = PBXGroup;
+			children = (
+				7D67CDD31F302DAA00FC79CE /* NanLifeBox */,
+				7D37742C2064AE78005DE77E /* NanLifeBoxTests */,
+				7D37743A2064AE88005DE77E /* NanLifeBoxUITests */,
+				7D67CDD21F302DAA00FC79CE /* Products */,
+				55C6E36270ADB4406DC96036 /* Pods */,
+				C79E1BF3814359CA681D916A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7D67CDD21F302DAA00FC79CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D67CDD11F302DAA00FC79CE /* NanLifeBox.app */,
+				7D37742B2064AE78005DE77E /* NanLifeBoxTests.xctest */,
+				7D3774392064AE88005DE77E /* NanLifeBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D67CDD31F302DAA00FC79CE /* NanLifeBox */ = {
+			isa = PBXGroup;
+			children = (
+				7D3774492064F583005DE77E /* Resource */,
+				7D67CDEA1F30575400FC79CE /* Home */,
+				7D2860B81FE60025000DA672 /* Enjoy */,
+				7D2860BD1FE60031000DA672 /* My */,
+				7D67CDE21F302DE800FC79CE /* Vendor */,
+				7D67CDE11F302DD900FC79CE /* Main */,
+				7D67CDD41F302DAA00FC79CE /* AppDelegate.swift */,
+				7D67CDD61F302DAA00FC79CE /* Assets.xcassets */,
+				7D67CDD81F302DAA00FC79CE /* LaunchScreen.storyboard */,
+				7D67CDDB1F302DAA00FC79CE /* Info.plist */,
+			);
+			path = NanLifeBox;
+			sourceTree = "<group>";
+		};
+		7D67CDE11F302DD900FC79CE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D67CE151F31B72F00FC79CE /* Model */,
+				7D67CDE31F302DFA00FC79CE /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7D67CDE21F302DE800FC79CE /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860B31FE55A7C000DA672 /* ZNTabBarController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		7D67CDE31F302DFA00FC79CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D67CDE41F302E0F00FC79CE /* NLBRootViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D67CDEA1F30575400FC79CE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7D2860C21FE6003E000DA672 /* ViewModel */,
+				7D67CE1A1F31C2C700FC79CE /* Model */,
+				7D67CE121F31AD1B00FC79CE /* View */,
+				7D67CDEB1F30575E00FC79CE /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7D67CDEB1F30575E00FC79CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DBD3F6920649F100031591D /* NLBWeatherController.swift */,
+				7DBD3F6A20649F100031591D /* NLBWeatherController.xib */,
+				7D90EAFD2064A7DE0083E9AB /* NLBHomeController.swift */,
+				7D90EAFE2064A7DE0083E9AB /* NLBHomeController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D67CE121F31AD1B00FC79CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D3774432064E4A4005DE77E /* NLBMenuCell.swift */,
+				7D3774442064E4A4005DE77E /* NLBMenuCell.xib */,
+				7D49B8BF2074BBB0000E6666 /* NLBDaysWeatherCell.swift */,
+				7D49B8C02074BBB0000E6666 /* NLBDaysWeatherCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D67CE151F31B72F00FC79CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D67CE161F31B74A00FC79CE /* NLBConst.swift */,
+				7D2C13CB1F34176D00358927 /* NLBMainData.swift */,
+				7DBD3F6520649C9B0031591D /* NLBNavigator.swift */,
+				7D49B8BB2074B4AD000E6666 /* NLBCellConfigurator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D67CE1A1F31C2C700FC79CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DBD3F6720649D3E0031591D /* NLBHomeNavigator.swift */,
+				7D37744C2068CE0E005DE77E /* NLBMenuInfo.swift */,
+				7D49B8BD2074B9B5000E6666 /* NLBMenuCellConf.swift */,
+				7D49B8B92074B45E000E6666 /* NLBDaysWeatherCellConf.swift */,
+				7DDBD90C2074C7E30067824D /* NLBWeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C79E1BF3814359CA681D916A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F303D9D24805F84A9B6F4CC /* Pods_NanLifeBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D37742A2064AE78005DE77E /* NanLifeBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3774342064AE78005DE77E /* Build configuration list for PBXNativeTarget "NanLifeBoxTests" */;
+			buildPhases = (
+				7D3774272064AE78005DE77E /* Sources */,
+				7D3774282064AE78005DE77E /* Frameworks */,
+				7D3774292064AE78005DE77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D3774312064AE78005DE77E /* PBXTargetDependency */,
+			);
+			name = NanLifeBoxTests;
+			productName = NanLifeBoxTests;
+			productReference = 7D37742B2064AE78005DE77E /* NanLifeBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D3774382064AE88005DE77E /* NanLifeBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3774402064AE88005DE77E /* Build configuration list for PBXNativeTarget "NanLifeBoxUITests" */;
+			buildPhases = (
+				7D3774352064AE88005DE77E /* Sources */,
+				7D3774362064AE88005DE77E /* Frameworks */,
+				7D3774372064AE88005DE77E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D37743F2064AE88005DE77E /* PBXTargetDependency */,
+			);
+			name = NanLifeBoxUITests;
+			productName = NanLifeBoxUITests;
+			productReference = 7D3774392064AE88005DE77E /* NanLifeBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7D67CDD01F302DAA00FC79CE /* NanLifeBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D67CDDE1F302DAA00FC79CE /* Build configuration list for PBXNativeTarget "NanLifeBox" */;
+			buildPhases = (
+				31FE9C353D18708DAC817D52 /* [CP] Check Pods Manifest.lock */,
+				7D67CDCD1F302DAA00FC79CE /* Sources */,
+				7D67CDCE1F302DAA00FC79CE /* Frameworks */,
+				7D67CDCF1F302DAA00FC79CE /* Resources */,
+				3D0D3E4C8B33ABC9DB558F55 /* [CP] Embed Pods Frameworks */,
+				D76710BC867056D5AB559F35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NanLifeBox;
+			productName = NanLifeBox;
+			productReference = 7D67CDD11F302DAA00FC79CE /* NanLifeBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D67CDC91F302DAA00FC79CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NLB;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Sniper.Edu;
+				TargetAttributes = {
+					7D37742A2064AE78005DE77E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D67CDD01F302DAA00FC79CE;
+					};
+					7D3774382064AE88005DE77E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D67CDD01F302DAA00FC79CE;
+					};
+					7D67CDD01F302DAA00FC79CE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7D67CDCC1F302DAA00FC79CE /* Build configuration list for PBXProject "NanLifeBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D67CDC81F302DAA00FC79CE;
+			productRefGroup = 7D67CDD21F302DAA00FC79CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D67CDD01F302DAA00FC79CE /* NanLifeBox */,
+				7D37742A2064AE78005DE77E /* NanLifeBoxTests */,
+				7D3774382064AE88005DE77E /* NanLifeBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3774292064AE78005DE77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3774372064AE88005DE77E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D67CDCF1F302DAA00FC79CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3774512068EF14005DE77E /* MyList.plist in Resources */,
+				7D2860CE1FE600C6000DA672 /* NLBEnjoyController.xib in Resources */,
+				7D6036492081A9B900873994 /* NLBHealthController.xib in Resources */,
+				7DBD3F6C20649F100031591D /* NLBWeatherController.xib in Resources */,
+				7D2860DC1FE66727000DA672 /* NLBImageJokeCell.xib in Resources */,
+				7D37744B2068CADE005DE77E /* MenuList.plist in Resources */,
+				7D2860D21FE600DB000DA672 /* NLBMyController.xib in Resources */,
+				7D67CDD71F302DAA00FC79CE /* Assets.xcassets in Resources */,
+				7D3774462064E4A4005DE77E /* NLBMenuCell.xib in Resources */,
+				7D49B8C22074BBB0000E6666 /* NLBDaysWeatherCell.xib in Resources */,
+				7D67CDDA1F302DAA00FC79CE /* LaunchScreen.storyboard in Resources */,
+				7D60364B2081AD5900873994 /* HealthList.plist in Resources */,
+				7D90EB002064A7DE0083E9AB /* NLBHomeController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31FE9C353D18708DAC817D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NanLifeBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0D3E4C8B33ABC9DB558F55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D76710BC867056D5AB559F35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3774272064AE78005DE77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D37742E2064AE78005DE77E /* NanLifeBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3774352064AE88005DE77E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D37743C2064AE88005DE77E /* NanLifeBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D67CDCD1F302DAA00FC79CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2860B71FE55B40000DA672 /* ZNTabBarItem.swift in Sources */,
+				7D37744D2068CE0E005DE77E /* NLBMenuInfo.swift in Sources */,
+				7D49B8BA2074B45E000E6666 /* NLBDaysWeatherCellConf.swift in Sources */,
+				7D67CE171F31B74A00FC79CE /* NLBConst.swift in Sources */,
+				7D60364F2081EEE400873994 /* NLBMyNavigator.swift in Sources */,
+				7D90EAFF2064A7DE0083E9AB /* NLBHomeController.swift in Sources */,
+				7D2860D11FE600DB000DA672 /* NLBMyController.swift in Sources */,
+				7D2860D41FE61056000DA672 /* NLBJokeData.swift in Sources */,
+				7D49B8C12074BBB0000E6666 /* NLBDaysWeatherCell.swift in Sources */,
+				7D67CDD51F302DAA00FC79CE /* AppDelegate.swift in Sources */,
+				7D6036512081F71C00873994 /* NLBHealthCellConf.swift in Sources */,
+				7DBD3F6820649D3E0031591D /* NLBHomeNavigator.swift in Sources */,
+				7DBD3F6B20649F100031591D /* NLBWeatherController.swift in Sources */,
+				7D67CDE51F302E0F00FC79CE /* NLBRootViewController.swift in Sources */,
+				7DBD3F6620649C9B0031591D /* NLBNavigator.swift in Sources */,
+				7D49B8BE2074B9B5000E6666 /* NLBMenuCellConf.swift in Sources */,
+				7D2860CD1FE600C6000DA672 /* NLBEnjoyController.swift in Sources */,
+				7D6036482081A9B900873994 /* NLBHealthController.swift in Sources */,
+				7D2860B51FE55A8D000DA672 /* ZNTabBarController.swift in Sources */,
+				7D3774452064E4A4005DE77E /* NLBMenuCell.swift in Sources */,
+				7D2860DB1FE66727000DA672 /* NLBImageJokeCell.swift in Sources */,
+				7DDBD90B2074BCB70067824D /* NLBWeatherViewModel.swift in Sources */,
+				7DDBD90D2074C7E30067824D /* NLBWeatherData.swift in Sources */,
+				7D6036532081F97800873994 /* NLBHealthLevelController.swift in Sources */,
+				7D2C13CC1F34176D00358927 /* NLBMainData.swift in Sources */,
+				7D49B8BC2074B4AD000E6666 /* NLBCellConfigurator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D3774312064AE78005DE77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D67CDD01F302DAA00FC79CE /* NanLifeBox */;
+			targetProxy = 7D3774302064AE78005DE77E /* PBXContainerItemProxy */;
+		};
+		7D37743F2064AE88005DE77E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D67CDD01F302DAA00FC79CE /* NanLifeBox */;
+			targetProxy = 7D37743E2064AE88005DE77E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D67CDD81F302DAA00FC79CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D67CDD91F302DAA00FC79CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D3774322064AE78005DE77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NanLifeBoxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.NanLifeBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanLifeBox.app/NanLifeBox";
+			};
+			name = Debug;
+		};
+		7D3774332064AE78005DE77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NanLifeBoxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.NanLifeBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanLifeBox.app/NanLifeBox";
+			};
+			name = Release;
+		};
+		7D3774412064AE88005DE77E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NanLifeBoxUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.NanLifeBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NanLifeBox;
+			};
+			name = Debug;
+		};
+		7D3774422064AE88005DE77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NanLifeBoxUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.NanLifeBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NanLifeBox;
+			};
+			name = Release;
+		};
+		7D67CDDC1F302DAA00FC79CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D67CDDD1F302DAA00FC79CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D67CDDF1F302DAA00FC79CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C4B910124ED8B30C81EDB2 /* Pods-NanLifeBox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NanLifeBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sniper.enjoy.NanLifeBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7D67CDE01F302DAA00FC79CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EF034C0635C8D5724DBC25 /* Pods-NanLifeBox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NanLifeBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sniper.enjoy.NanLifeBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3774342064AE78005DE77E /* Build configuration list for PBXNativeTarget "NanLifeBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3774322064AE78005DE77E /* Debug */,
+				7D3774332064AE78005DE77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3774402064AE88005DE77E /* Build configuration list for PBXNativeTarget "NanLifeBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3774412064AE88005DE77E /* Debug */,
+				7D3774422064AE88005DE77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D67CDCC1F302DAA00FC79CE /* Build configuration list for PBXProject "NanLifeBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D67CDDC1F302DAA00FC79CE /* Debug */,
+				7D67CDDD1F302DAA00FC79CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D67CDDE1F302DAA00FC79CE /* Build configuration list for PBXNativeTarget "NanLifeBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D67CDDF1F302DAA00FC79CE /* Debug */,
+				7D67CDE01F302DAA00FC79CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D67CDC91F302DAA00FC79CE /* Project object */;
+}
