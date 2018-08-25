@@ -55,22 +55,4 @@ class NLBWeatherInfo: NLBMainInfo {
 }
 
 class NLBWeatherData: NLBMainData {
-    override func postUrl() -> String {
-        // http://api.data.cma.cn:8090/api?userId=<帐号>&pwd=<密码>&dataFormat=json&interfaceId=getSurfEleByTimeRangeAndStaID&dataCode=SURF_CHN_MUL_HOR&timeRange=<时间范围>&staIDs=<台站列表>&elements=Station_Id_C,Year,Mon,Day,Hour,<要素列表>
-        return kWeather_POSTURL
-        
-    }
-    
-    override func postParameters() -> Dictionary<String, Any> {
-        var dict = Dictionary<String, Any>()
-        dict["userId"] = kWeather_USERNAME
-        dict["pwd"] = kWeather_PWD
-        dict["dataFormat"] = "json"
-        dict["interfaceId"] = kInterfaceId
-        dict["dataCode"] = kDataCode
-        dict["timeRange"] = "111"
-        dict["staIDs"] = "111"
-        dict["elements"] = "111"
-        return dict
-    }
 }
