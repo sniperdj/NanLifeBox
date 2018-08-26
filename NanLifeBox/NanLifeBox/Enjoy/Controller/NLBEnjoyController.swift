@@ -15,8 +15,25 @@ class NLBEnjoyController: NLBRootController {
 
         
     }
-
     
+    override func setupData() {
+        let jokeParams = NLBJokeParameterDatas()
+        jokeParams.time = "12345"
+        let jokeFetchData = NLBNetwork()
+        jokeFetchData.url(url: jokeParams.requestUrl())
+            .fetchMethod(method: .get)
+            .body(bodyParams: jokeParams.parameters())
+            .fetchData(responser: { (responseStatus, response) in
+            switch responseStatus {
+            case .NLBFetchResponseSuccess:
+                print("success : \(String(describing: response.data))")
+            case .NLBFetchResponseErro:
+                print("error : \(String(describing: response.data))")
+            case .NLBFetchResponseFail:
+                print("fail : \(String(describing: response.error))")
+            }
+        })
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

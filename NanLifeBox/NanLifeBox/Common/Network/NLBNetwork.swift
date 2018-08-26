@@ -9,10 +9,10 @@
 import UIKit
 import Alamofire
 
-enum NLBNetworkResponse {
-    case NLBNetworkResponseSuccess
-    case NLBNetworkResponseErro
-    case NLBNetworkResponseFail
+enum NLBFetchResponse {
+    case NLBFetchResponseSuccess
+    case NLBFetchResponseErro
+    case NLBFetchResponseFail
 }
 
 //enum NLBNetworkError : NLBNetworkResponse {
@@ -21,17 +21,13 @@ enum NLBNetworkResponse {
 ////    case NLBNetworkErrorTimeOut(Error)
 //}
 
-typealias NLBResponseHandler = (NLBNetworkResponse, DataResponse<Any>) -> Void
+typealias NLBResponseHandler = (NLBFetchResponse, DataResponse<Any>) -> Void
 
 class NLBNetwork {
     private var requestUrl : String = ""
     private var bodyParameters : Dictionary<String, Any> = [:]
     private var headerParameters : Dictionary<String, String> = [:]
     private var httpMethod : HTTPMethod = .post
-    
-    func aaa() ->Void {
-        
-    }
     
     func url(url : String) -> NLBNetwork {
         self.requestUrl = url
@@ -53,18 +49,18 @@ class NLBNetwork {
         return self
     }
     
-    func fetchData(responser : @escaping NLBResponseHandler) -> NLBNetwork {
+    func fetchData(responser : @escaping NLBResponseHandler) -> Void {
         print("fetch url : \(self.requestUrl)")
         print("fetch parameters : \(self.bodyParameters)")
         request(self.requestUrl, method: self.httpMethod, parameters: self.bodyParameters, encoding: URLEncoding.default, headers: headerParameters).responseJSON { (responseObj) in
             print("fetch response : \(responseObj)")
             if (responseObj.error != nil) {
-                responser(NLBNetworkResponse.NLBNetworkResponseFail, responseObj)
+                responser(NLBFetchResponse.NLBFetchResponseFail, responseObj)
             } else {
-                responser(NLBNetworkResponse.NLBNetworkResponseSuccess, responseObj)
+                responser(NLBFetchResponse.NLBFetchResponseSuccess, responseObj)
             }
             
         }
-        return self
+//        return self
     }
 }

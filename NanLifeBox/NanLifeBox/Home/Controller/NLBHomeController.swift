@@ -21,6 +21,8 @@ class NLBHomeController: NLBRootController {
             make.center.equalTo(self.view)
         }
         welcomeView.text = "欢迎使用木南生活盒子!"
+        let loadingVC = NLBLoadingController()
+        addPluginController(loadingVC)
         
 //        let aData = NLBNetwork()
 //        aData.url(url: "www.baidu.com").body(bodyParams: ["a" : "1"]).fetchData { (responseStatus, responseObj) in

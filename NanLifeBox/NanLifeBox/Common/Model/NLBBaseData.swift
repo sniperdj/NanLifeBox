@@ -8,6 +8,14 @@
 
 import UIKit
 
-class NLBBaseData: NSObject {
-
+class NLBBaseData {
+    func requestUrl() -> String {
+        return ""
+    }
+    
+    func parameters() -> Dictionary<String, Any> {
+        let params = ["a" : "1"]
+        return params
+    }
+    
 }
