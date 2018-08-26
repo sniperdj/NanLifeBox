@@ -19,6 +19,7 @@
 		7D227F4C2132567B00C9E50D /* NLBJokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F4B2132567B00C9E50D /* NLBJokeData.swift */; };
 		7D227F4E213271A200C9E50D /* NLBJokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F4D213271A200C9E50D /* NLBJokeController.swift */; };
 		7D227F50213271B700C9E50D /* NLBJokeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F4F213271B700C9E50D /* NLBJokeListController.swift */; };
+		7D227F532132757200C9E50D /* NLBEnjoyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F522132757200C9E50D /* NLBEnjoyViewModel.swift */; };
 		7D308FA621322BE0004409DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D308FA521322BE0004409DF /* AppDelegate.swift */; };
 		7D308FAB21322BE0004409DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D308FA921322BE0004409DF /* Main.storyboard */; };
 		7D308FAD21322BE0004409DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D308FAC21322BE0004409DF /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		7D227F4B2132567B00C9E50D /* NLBJokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBJokeData.swift; sourceTree = "<group>"; };
 		7D227F4D213271A200C9E50D /* NLBJokeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBJokeController.swift; sourceTree = "<group>"; };
 		7D227F4F213271B700C9E50D /* NLBJokeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBJokeListController.swift; sourceTree = "<group>"; };
+		7D227F522132757200C9E50D /* NLBEnjoyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBEnjoyViewModel.swift; sourceTree = "<group>"; };
 		7D308FA221322BE0004409DF /* NanLifeBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanLifeBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D308FA521322BE0004409DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D308FAA21322BE0004409DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		7D227F3F21324EA700C9E50D /* Enjoy */ = {
 			isa = PBXGroup;
 			children = (
+				7D227F512132755C00C9E50D /* ViewModel */,
 				7D227F47213252D900C9E50D /* Model */,
 				7D227F4021324EBE00C9E50D /* Controller */,
 			);
@@ -191,6 +194,14 @@
 				7D227F492132532500C9E50D /* NLBBaseData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7D227F512132755C00C9E50D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F522132757200C9E50D /* NLBEnjoyViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7D308F9921322BE0004409DF = {
@@ -445,11 +456,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +493,7 @@
 				7D308FA621322BE0004409DF /* AppDelegate.swift in Sources */,
 				7D227F3E21324D2D00C9E50D /* ZNTabBarController.swift in Sources */,
 				7D227F3421323A6400C9E50D /* NLBRootController.swift in Sources */,
+				7D227F532132757200C9E50D /* NLBEnjoyViewModel.swift in Sources */,
 				7D227F362132473800C9E50D /* NLBLoadingController.swift in Sources */,
 				7D227F312132394100C9E50D /* NLBHomeController.swift in Sources */,
 			);

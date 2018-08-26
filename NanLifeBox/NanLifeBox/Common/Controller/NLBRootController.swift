@@ -8,16 +8,27 @@
 
 import UIKit
 
+protocol Navigator {
+    associatedtype Destination
+    
+    func navigate(to destination: Destination)
+}
+
 class NLBRootController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.white
         self.setupUI()
+        self.bindViewModels()
         self.setupData()
     }
 
     func setupUI() -> Void {
+        
+    }
+    
+    func bindViewModels() {
         
     }
     

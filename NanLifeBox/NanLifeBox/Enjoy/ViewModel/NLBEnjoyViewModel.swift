@@ -8,6 +8,11 @@
 
 import UIKit
 
-class NLBEnjoyViewModel: NSObject {
+// View(ViewController)可以引用ViewModel 反过来不行
+// ViewModel 可以引用Model 反过来不行
 
+struct NLBEnjoyViewModel {
+    func redirectToJoke() {
+        
+    }
 }

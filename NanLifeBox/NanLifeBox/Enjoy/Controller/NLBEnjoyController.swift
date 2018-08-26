@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import ReactiveCocoa
 
 class NLBEnjoyController: NLBRootController {
-
+    
+    enum Destination {
+        case joke
+    }
+    
+    let enjoyViewModel = NLBEnjoyViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
     override func setupUI() {
@@ -26,50 +31,41 @@ class NLBEnjoyController: NLBRootController {
         }
         jokeBtn.setTitle("笑话大全", for: .normal)
         jokeBtn.backgroundColor = UIColor.orange
-    }
-    
-    override func setupData() {
-//        let jokeParams = NLBJokeParameterDatas()
-//        jokeParams.time = "12345"
-//        let jokeFetchData = NLBNetwork()
-//        let loadingVC = NLBLoadingController()
-//        addPluginController(loadingVC)
-//        DispatchQueue.main.async {
-//            loadingVC.showLoading()
-//        }
-//        jokeFetchData.url(url: jokeParams.requestUrl())
-//            .fetchMethod(method: .get)
-//            .body(bodyParams: jokeParams.parameters())
-//            .fetchData(responser: { (responseStatus, response) in
-//                DispatchQueue.main.async {
-//                    loadingVC.hideLoading()
-//                    self.removeThePluginController()
-//                }
-//                switch responseStatus {
-//                case .NLBFetchResponseSuccess:
-//                    print("success : \(String(describing: response.data))")
-//                case .NLBFetchResponseErro:
-//                    print("error : \(String(describing: response.data))")
-//                case .NLBFetchResponseFail:
-//                    print("fail : \(String(describing: response.error))")
-//                }
-//        })
+        
+        let enjoyNavigator = EnjoyNavigator(navigationController: self.navigationController!)
+        
+        let jokeBtnClickSignal = jokeBtn.reactive.controlEvents(.touchUpInside)
+        jokeBtnClickSignal.observe { (signal) in
+            enjoyNavigator.navigate(to: .joke)
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+class EnjoyNavigator: Navigator {
+    private weak var navigationController: UINavigationController?
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func navigate(to destination: NLBEnjoyController.Destination) {
+        let destVC = self.makeController(for: .joke)
+        navigationController?.pushViewController(destVC, animated: true)
+    }
+    
+    func makeController(for destination: Destination) -> UIViewController {
+        switch destination {
+        case .joke:
+            let jokeListController = NLBJokeListController()
+            return jokeListController
+        default:
+            return NLBJokeListController()
+        }
+    }
+}
+
