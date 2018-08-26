@@ -11,17 +11,23 @@ import Alamofire
 
 enum NLBNetworkResponse {
     case NLBNetworkResponseSuccess
-    case NLBNetworkResponseError
+    case NLBNetworkResponseErro
     case NLBNetworkResponseFail
 }
 
-typealias NLBResponser = (NLBNetworkResponse, DataResponse<Any>) -> Void
+//enum NLBNetworkError : NLBNetworkResponse {
+//    case NLBNetworkErrorTimeOut
+//    case NLBNetworkErrorUnavialable
+////    case NLBNetworkErrorTimeOut(Error)
+//}
+
+typealias NLBResponseHandler = (NLBNetworkResponse, DataResponse<Any>) -> Void
 
 class NLBNetwork {
-    var requestUrl : String = ""
-    var bodyParameters : Dictionary<String, Any> = [:]
-    var headerParameters : Dictionary<String, String> = [:]
-    var httpMethod : HTTPMethod = .post
+    private var requestUrl : String = ""
+    private var bodyParameters : Dictionary<String, Any> = [:]
+    private var headerParameters : Dictionary<String, String> = [:]
+    private var httpMethod : HTTPMethod = .post
     
     func aaa() ->Void {
         
@@ -47,14 +53,15 @@ class NLBNetwork {
         return self
     }
     
-    func fetchData(responser : @escaping NLBResponser) -> NLBNetwork {
+    func fetchData(responser : @escaping NLBResponseHandler) -> NLBNetwork {
+        print("fetch url : \(self.requestUrl)")
+        print("fetch parameters : \(self.bodyParameters)")
         request(self.requestUrl, method: self.httpMethod, parameters: self.bodyParameters, encoding: URLEncoding.default, headers: headerParameters).responseJSON { (responseObj) in
+            print("fetch response : \(responseObj)")
             if (responseObj.error != nil) {
-                let responseSuccess = NLBNetworkResponse.NLBNetworkResponseFail
-                responser(responseSuccess, responseObj)
+                responser(NLBNetworkResponse.NLBNetworkResponseFail, responseObj)
             } else {
-                let responseSuccess = NLBNetworkResponse.NLBNetworkResponseSuccess
-                responser(responseSuccess, responseObj)
+                responser(NLBNetworkResponse.NLBNetworkResponseSuccess, responseObj)
             }
             
         }

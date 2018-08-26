@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.backgroundColor = UIColor.white
-
-        let rootController = NLBHomeController()
+        
+        let rootController = ZNTabBarController()
 
         self.window?.rootViewController = rootController
         self.window!.makeKeyAndVisible()

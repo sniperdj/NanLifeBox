@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7D227F312132394100C9E50D /* NLBHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F302132394100C9E50D /* NLBHomeController.swift */; };
+		7D227F3421323A6400C9E50D /* NLBRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F3321323A6400C9E50D /* NLBRootController.swift */; };
+		7D227F362132473800C9E50D /* NLBLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F352132473800C9E50D /* NLBLoadingController.swift */; };
+		7D227F3D21324D2D00C9E50D /* ZNTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F3B21324D2D00C9E50D /* ZNTabBarItem.swift */; };
+		7D227F3E21324D2D00C9E50D /* ZNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F3C21324D2D00C9E50D /* ZNTabBarController.swift */; };
+		7D227F4221324EF400C9E50D /* NLBEnjoyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F4121324EF400C9E50D /* NLBEnjoyController.swift */; };
+		7D227F442132518700C9E50D /* NLBConstFetchUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F432132518700C9E50D /* NLBConstFetchUrls.swift */; };
+		7D227F46213251B200C9E50D /* NLBConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F45213251B200C9E50D /* NLBConst.swift */; };
+		7D227F4A2132532500C9E50D /* NLBBaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D227F492132532500C9E50D /* NLBBaseData.swift */; };
 		7D308FA621322BE0004409DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D308FA521322BE0004409DF /* AppDelegate.swift */; };
 		7D308FAB21322BE0004409DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D308FA921322BE0004409DF /* Main.storyboard */; };
 		7D308FAD21322BE0004409DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D308FAC21322BE0004409DF /* Assets.xcassets */; };
@@ -15,7 +23,6 @@
 		7D308FBB21322BE0004409DF /* NanLifeBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D308FBA21322BE0004409DF /* NanLifeBoxTests.swift */; };
 		7D308FC621322BE1004409DF /* NanLifeBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D308FC521322BE1004409DF /* NanLifeBoxUITests.swift */; };
 		7D308FD721322D55004409DF /* NLBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D308FD621322D55004409DF /* NLBNetwork.swift */; };
-		7D308FDB213230C8004409DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D308FDA213230C8004409DF /* Alamofire.framework */; };
 		9C90672E123782522CB1E07D /* Pods_NanLifeBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0CF61492E4B38C31C8867E /* Pods_NanLifeBox.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +47,15 @@
 		0D0CF61492E4B38C31C8867E /* Pods_NanLifeBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanLifeBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		366D75EEE413E76AE9EC7903 /* Pods-NanLifeBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanLifeBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox.debug.xcconfig"; sourceTree = "<group>"; };
 		7D227F302132394100C9E50D /* NLBHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBHomeController.swift; sourceTree = "<group>"; };
+		7D227F3321323A6400C9E50D /* NLBRootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBRootController.swift; sourceTree = "<group>"; };
+		7D227F352132473800C9E50D /* NLBLoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBLoadingController.swift; sourceTree = "<group>"; };
+		7D227F37213247D600C9E50D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D227F3B21324D2D00C9E50D /* ZNTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNTabBarItem.swift; sourceTree = "<group>"; };
+		7D227F3C21324D2D00C9E50D /* ZNTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNTabBarController.swift; sourceTree = "<group>"; };
+		7D227F4121324EF400C9E50D /* NLBEnjoyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBEnjoyController.swift; sourceTree = "<group>"; };
+		7D227F432132518700C9E50D /* NLBConstFetchUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBConstFetchUrls.swift; sourceTree = "<group>"; };
+		7D227F45213251B200C9E50D /* NLBConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBConst.swift; sourceTree = "<group>"; };
+		7D227F492132532500C9E50D /* NLBBaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLBBaseData.swift; sourceTree = "<group>"; };
 		7D308FA221322BE0004409DF /* NanLifeBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanLifeBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D308FA521322BE0004409DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D308FAA21322BE0004409DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D308FDB213230C8004409DF /* Alamofire.framework in Frameworks */,
 				9C90672E123782522CB1E07D /* Pods_NanLifeBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +126,64 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		7D227F3221323A5600C9E50D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F3321323A6400C9E50D /* NLBRootController.swift */,
+				7D227F352132473800C9E50D /* NLBLoadingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D227F3921324D1700C9E50D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F3A21324D2D00C9E50D /* ZNTabBarController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		7D227F3A21324D2D00C9E50D /* ZNTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F3B21324D2D00C9E50D /* ZNTabBarItem.swift */,
+				7D227F3C21324D2D00C9E50D /* ZNTabBarController.swift */,
+			);
+			path = ZNTabBarController;
+			sourceTree = "<group>";
+		};
+		7D227F3F21324EA700C9E50D /* Enjoy */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F47213252D900C9E50D /* Model */,
+				7D227F4021324EBE00C9E50D /* Controller */,
+			);
+			path = Enjoy;
+			sourceTree = "<group>";
+		};
+		7D227F4021324EBE00C9E50D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F4121324EF400C9E50D /* NLBEnjoyController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D227F47213252D900C9E50D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D227F482132531000C9E50D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D227F492132532500C9E50D /* NLBBaseData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7D308F9921322BE0004409DF = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +209,9 @@
 		7D308FA421322BE0004409DF /* NanLifeBox */ = {
 			isa = PBXGroup;
 			children = (
+				7D227F3921324D1700C9E50D /* Vendor */,
 				7D227F2E213238FE00C9E50D /* Home */,
+				7D227F3F21324EA700C9E50D /* Enjoy */,
 				7D308FD421322CE1004409DF /* Common */,
 				7D308FD321322CB9004409DF /* Resources */,
 				7D308FA521322BE0004409DF /* AppDelegate.swift */,
@@ -176,7 +251,10 @@
 		7D308FD421322CE1004409DF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7D227F482132531000C9E50D /* Model */,
+				7D227F3221323A5600C9E50D /* Controller */,
 				7D308FD521322CF5004409DF /* Network */,
+				7D227F45213251B200C9E50D /* NLBConst.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -185,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				7D308FD621322D55004409DF /* NLBNetwork.swift */,
+				7D227F432132518700C9E50D /* NLBConstFetchUrls.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -192,6 +271,7 @@
 		E510608EEC6A068FC6CD9750 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D227F37213247D600C9E50D /* SnapKit.framework */,
 				7D308FDC21323220004409DF /* Foundation.framework */,
 				7D308FDA213230C8004409DF /* Alamofire.framework */,
 				7D308FD821322E37004409DF /* Alamofire.framework */,
@@ -356,10 +436,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NanLifeBox/Pods-NanLifeBox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,8 +455,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D227F4221324EF400C9E50D /* NLBEnjoyController.swift in Sources */,
+				7D227F442132518700C9E50D /* NLBConstFetchUrls.swift in Sources */,
+				7D227F4A2132532500C9E50D /* NLBBaseData.swift in Sources */,
+				7D227F46213251B200C9E50D /* NLBConst.swift in Sources */,
+				7D227F3D21324D2D00C9E50D /* ZNTabBarItem.swift in Sources */,
 				7D308FD721322D55004409DF /* NLBNetwork.swift in Sources */,
 				7D308FA621322BE0004409DF /* AppDelegate.swift in Sources */,
+				7D227F3E21324D2D00C9E50D /* ZNTabBarController.swift in Sources */,
+				7D227F3421323A6400C9E50D /* NLBRootController.swift in Sources */,
+				7D227F362132473800C9E50D /* NLBLoadingController.swift in Sources */,
 				7D227F312132394100C9E50D /* NLBHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
