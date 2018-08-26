@@ -9,5 +9,5 @@
 import UIKit
 
 /** 聚合的笑话接口 */
-let jokeListUrl = "http://v.juhe.cn/joke/content/list.php"
+let jokeListUrl = "https://v.juhe.cn/joke/content/list.php"
 

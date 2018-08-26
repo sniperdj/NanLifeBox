@@ -53,7 +53,7 @@ class NLBNetwork {
         print("fetch url : \(self.requestUrl)")
         print("fetch parameters : \(self.bodyParameters)")
         request(self.requestUrl, method: self.httpMethod, parameters: self.bodyParameters, encoding: URLEncoding.default, headers: headerParameters).responseJSON { (responseObj) in
-            print("fetch response : \(responseObj)")
+//            print("fetch response : \(responseObj)")
             if (responseObj.error != nil) {
                 responser(NLBFetchResponse.NLBFetchResponseFail, responseObj)
             } else {

@@ -23,7 +23,7 @@ class NLBJokeParameterDatas : NLBBaseData {
         let params = ["sort" : sort,
                       "page" : page,
                       "pagesize" : pageSize,
-                      "time" : time,
+                      "time" : 1418819632,
                       "key" : key] as [String : Any]
         return params
     }

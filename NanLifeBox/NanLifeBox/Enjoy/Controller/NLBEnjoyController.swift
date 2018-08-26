@@ -16,23 +16,44 @@ class NLBEnjoyController: NLBRootController {
         
     }
     
+    override func setupUI() {
+        let jokeBtn = UIButton()
+        view.addSubview(jokeBtn)
+        jokeBtn.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view)
+            make.width.equalTo(120)
+            make.height.equalTo(40)
+        }
+        jokeBtn.setTitle("笑话大全", for: .normal)
+        jokeBtn.backgroundColor = UIColor.orange
+    }
+    
     override func setupData() {
-        let jokeParams = NLBJokeParameterDatas()
-        jokeParams.time = "12345"
-        let jokeFetchData = NLBNetwork()
-        jokeFetchData.url(url: jokeParams.requestUrl())
-            .fetchMethod(method: .get)
-            .body(bodyParams: jokeParams.parameters())
-            .fetchData(responser: { (responseStatus, response) in
-            switch responseStatus {
-            case .NLBFetchResponseSuccess:
-                print("success : \(String(describing: response.data))")
-            case .NLBFetchResponseErro:
-                print("error : \(String(describing: response.data))")
-            case .NLBFetchResponseFail:
-                print("fail : \(String(describing: response.error))")
-            }
-        })
+//        let jokeParams = NLBJokeParameterDatas()
+//        jokeParams.time = "12345"
+//        let jokeFetchData = NLBNetwork()
+//        let loadingVC = NLBLoadingController()
+//        addPluginController(loadingVC)
+//        DispatchQueue.main.async {
+//            loadingVC.showLoading()
+//        }
+//        jokeFetchData.url(url: jokeParams.requestUrl())
+//            .fetchMethod(method: .get)
+//            .body(bodyParams: jokeParams.parameters())
+//            .fetchData(responser: { (responseStatus, response) in
+//                DispatchQueue.main.async {
+//                    loadingVC.hideLoading()
+//                    self.removeThePluginController()
+//                }
+//                switch responseStatus {
+//                case .NLBFetchResponseSuccess:
+//                    print("success : \(String(describing: response.data))")
+//                case .NLBFetchResponseErro:
+//                    print("error : \(String(describing: response.data))")
+//                case .NLBFetchResponseFail:
+//                    print("fail : \(String(describing: response.error))")
+//                }
+//        })
     }
     
     override func didReceiveMemoryWarning() {
