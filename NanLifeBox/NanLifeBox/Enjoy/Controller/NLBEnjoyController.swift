@@ -16,12 +16,16 @@ class NLBEnjoyController: NLBRootController {
     }
     
     let enjoyViewModel = NLBEnjoyViewModel()
+    var enjoyNavigator : NLBEnjoyNavigator? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func setupUI() {
+        
+        view.backgroundColor = UIColor.cyan
+        
         let jokeBtn = UIButton()
         view.addSubview(jokeBtn)
         jokeBtn.snp.makeConstraints { (make) in
@@ -32,11 +36,13 @@ class NLBEnjoyController: NLBRootController {
         jokeBtn.setTitle("笑话大全", for: .normal)
         jokeBtn.backgroundColor = UIColor.orange
         
-        let enjoyNavigator = EnjoyNavigator(navigationController: self.navigationController!)
+        enjoyNavigator = NLBEnjoyNavigator(navigationController: self.navigationController!)
         
         let jokeBtnClickSignal = jokeBtn.reactive.controlEvents(.touchUpInside)
         jokeBtnClickSignal.observe { (signal) in
-            enjoyNavigator.navigate(to: .joke)
+            self.enjoyNavigator?.navigate(to: .joke)
+//            let jokeListController = NLBJokeListController()
+//            self.navigationController?.pushViewController(jokeListController, animated: true)
         }
     }
     
@@ -46,7 +52,7 @@ class NLBEnjoyController: NLBRootController {
     }
 }
 
-class EnjoyNavigator: Navigator {
+class NLBEnjoyNavigator: Navigator {
     private weak var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController) {
@@ -55,13 +61,13 @@ class EnjoyNavigator: Navigator {
     
     func navigate(to destination: NLBEnjoyController.Destination) {
         let destVC = self.makeController(for: .joke)
-        navigationController?.pushViewController(destVC, animated: true)
+        self.navigationController?.pushViewController(destVC, animated: true)
     }
     
     func makeController(for destination: Destination) -> UIViewController {
         switch destination {
         case .joke:
-            let jokeListController = NLBJokeListController()
+            let jokeListController = NLBJokeListController(nibName: nil, bundle: nil)
             return jokeListController
         default:
             return NLBJokeListController()

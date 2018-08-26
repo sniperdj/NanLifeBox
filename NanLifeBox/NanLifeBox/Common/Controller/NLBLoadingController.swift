@@ -35,5 +35,22 @@ class NLBLoadingController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
 
+extension UIViewController {
+    func nlb_addPluginController(_ child: UIViewController) {
+        addChildViewController(child)
+        view.addSubview(child.view)
+        child.didMove(toParentViewController: self)
+    }
+    
+    func nlb_removePluginController() {
+        guard parent != nil else {
+            return
+        }
+        
+        willMove(toParentViewController: nil)
+        removeFromParentViewController()
+        view.removeFromSuperview()
+    }
 }

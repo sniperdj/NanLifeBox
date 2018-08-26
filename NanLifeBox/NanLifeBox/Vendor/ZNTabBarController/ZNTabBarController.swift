@@ -16,7 +16,7 @@ class ZNTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.yellow;
+        self.view.backgroundColor = UIColor.white;
         self.tabBar.isTranslucent = false
 //        self.setupUI()
         self.setupChildViewControllers()

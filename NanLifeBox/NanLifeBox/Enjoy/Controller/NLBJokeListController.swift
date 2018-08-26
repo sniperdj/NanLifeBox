@@ -15,24 +15,22 @@ class NLBJokeListController: NLBRootController {
 
         
     }
-
+    
+    override func setupUI() {
+        title = "笑话大全"
+    }
+    
     override func setupData() {
         let jokeParams = NLBJokeParameterDatas()
         jokeParams.time = "12345"
         let jokeFetchData = NLBNetwork()
         let loadingVC = NLBLoadingController()
-        addPluginController(loadingVC)
-        DispatchQueue.main.async {
-            loadingVC.showLoading()
-        }
+        nlb_addPluginController(loadingVC)
         jokeFetchData.url(url: jokeParams.requestUrl())
             .fetchMethod(method: .get)
             .body(bodyParams: jokeParams.parameters())
             .fetchData(responser: { (responseStatus, response) in
-                DispatchQueue.main.async {
-                    loadingVC.hideLoading()
-                    self.removeThePluginController()
-                }
+                loadingVC.nlb_removePluginController()
                 switch responseStatus {
                 case .NLBFetchResponseSuccess:
                     print("success : \(String(describing: response.data))")

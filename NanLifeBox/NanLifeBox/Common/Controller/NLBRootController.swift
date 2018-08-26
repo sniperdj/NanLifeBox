@@ -43,21 +43,3 @@ class NLBRootController: UIViewController {
     }
 
 }
-
-extension NLBRootController {
-    func addPluginController(_ child: UIViewController) {
-        addChildViewController(child)
-        view.addSubview(child.view)
-        child.didMove(toParentViewController: self)
-    }
-    
-    func removeThePluginController() {
-        guard parent != nil else {
-            return
-        }
-        
-        willMove(toParentViewController: nil)
-        removeFromParentViewController()
-        view.removeFromSuperview()
-    }
-}
