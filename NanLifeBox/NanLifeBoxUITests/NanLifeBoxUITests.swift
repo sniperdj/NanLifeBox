@@ -2,8 +2,8 @@
 //  NanLifeBoxUITests.swift
 //  NanLifeBoxUITests
 //
-//  Created by Sniper on 23/03/2018.
-//  Copyright © 2018 Sniper.Edu. All rights reserved.
+//  Created by Sniper on 2018/8/26.
+//  Copyright © 2018 Sniper. All rights reserved.
 //
 
 import XCTest

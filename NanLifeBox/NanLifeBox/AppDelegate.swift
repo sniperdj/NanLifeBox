@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  NanLifeBox
 //
-//  Created by Sniper on 2017/8/1.
-//  Copyright © 2017年 Sniper.Edu. All rights reserved.
+//  Created by Sniper on 2018/8/26.
+//  Copyright © 2018 Sniper. All rights reserved.
 //
 
 import UIKit
@@ -13,15 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
         // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.white
-        
-        let rootController : ZNTabBarController = ZNTabBarController()
-        
-        self.window?.rootViewController = rootController
-        self.window!.makeKeyAndVisible()
         return true
     }
 

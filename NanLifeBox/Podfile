@@ -1,7 +1,0 @@
-platform :ios, '10.0'
-use_frameworks!
-
-target 'NanLifeBox' do
-    pod 'Alamofire', '~> 4.5'
-    pod 'ReactiveCocoa', '~> 7.0.1'
-end
